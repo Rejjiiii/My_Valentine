@@ -1,7 +1,12 @@
 let canvas, width, height, ctx;
 let fireworks = [];
 let particles = [];
+let speedFactor = 2;
 
+if (window.innerWidth < 500) {
+    speedFactor = 2; // Increase speeds by a factor of 2 on small screens
+  }
+  
 function setup() {
     canvas = document.getElementById("canvas");
     setSize(canvas);
@@ -61,9 +66,9 @@ class Particle {
     }
 
     update() {
-        this.x += this.vel.x;
-        this.y += this.vel.y;
-        this.vel.y += 0.02;
+        this.x += this.vel.x * speedFactor;
+        this.y += this.vel.y * speedFactor;
+        this.vel.y += 0.02 * speedFactor;
         this.vel.x *= 0.99;
         this.vel.y *= 0.99;
         this.lifetime++;
@@ -85,7 +90,8 @@ class Firework {
     }
 
     update() {
-        this.y -= 3.5;
+        this.y -= 3.5 * speedFactor;
+
         if (this.y < 350 - Math.sqrt(Math.random() * 500) * 40) {
             this.isBlown = true;
             for (let i = 0; i < 60; i++) {
