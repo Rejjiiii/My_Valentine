@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/yes_style.css">
+
+</head>
+
+<body onload="setup()">
+    <canvas id="canvas"></canvas>
+
+    <div class="container">
+        <div>
+            <h1 class="header_text">Hurrayyyy!!</h1>
+            <h1 class="header_text">🥰🤗💐😭😚💝</h1>
+        </div>
+        <div class="gif_container">
+            <img src="./public/cute.png" alt="Cute animated illustration" style="height: 20vh; width: 20vh;">
+        </div>
+        <div>
+            <h1 class="paragraph_text">Where do you want to eat???</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="pageOne()">Pugpog Bikers</button>
+            <button class="btn" onclick="pageTwo()">Samgyup Salamat</button>
+            <button class="btn" onclick="pageThree()">Samgyup 199</button>
+
+            <script>
+                function pageOne() {
+                    window.location.href = "one.html";
+                }
+
+                function pageTwo() {
+                    window.location.href = "two.html";
+                }
+
+                function pageThree() {
+                    window.location.href = "three.html";
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/fireworks.js"></script>
+
+</html>

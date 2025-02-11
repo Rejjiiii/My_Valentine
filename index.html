@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="messageContainer">
+            <h1 class="header_text" id="message">...</h1>
+        </div>
+
+        <div id="textBlock">
+            <h1 class="header_text">Let's build a future filled with love and memories.</h1>
+            <h1 class="header_text">Will you be my Valentine? 🥺</h1>
+        </div>
+
+        <div class="gif_container" id="gifBlock">
+            <!-- <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+                alt="Cute animated illustration"> -->
+            <img src="./public/Dino.png" alt="Cute animated illustration" style="
+                height: 20vh;
+                width: 25vh;">
+            <img src="./public/panda.png" alt="Cute animated illustration" style="
+                height: 20vh;
+                width: 18vh;">
+        </div>
+
+        <div class="buttons" id="btnsBlock">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+
+    </div>
+
+    <script src="./js/message.js"></script>
+</body>
+
+</html>
